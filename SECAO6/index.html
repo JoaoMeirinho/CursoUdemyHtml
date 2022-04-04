@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Exemplo de Formulário </h1>
+    <form action="#" method="post" class="formlogin">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label>Email</label>
+            <input type="email" name="" id="" required>
+            <br>
+            <label>Número de filhos</label>
+            <input type="number" name="" id="" min="0" max="100" step=".5">
+            <br>
+            <label>Nascimento</label>
+            <input type="date" min="2018-01-30">
+            <br>
+            <p>Sexo</p>
+            <label>
+                Masculino
+                <input type="radio" name="sexo" id="" value="M">
+            </label>
+            <label>
+                Feminino
+                <input type="radio" name="sexo" id="" value="F">
+            </label>
+            <br>
+            <br>
+            <label>Estado</label>
+            <select name="estado" id="">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+
+            <select name="" id="" multiple size="4">
+                <option value="">Opção 1</option>
+                <option value="">Opção 2</option>
+                <option value="">Opção 3</option>
+                <option value="">Opção 4</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Área de Interesse</legend>
+            <label for="">
+                <input type="checkbox" name="html" value="html">
+                HTML
+            </label>
+            <label for="">
+                <input type="checkbox" name="css" value="css">
+                CSS
+            </label>
+            <label for="">
+                <input type="checkbox" name="js" value="js">
+                JavaScript
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea style="resize: none;" name="msg" id="" cols="30" rows="10"></textarea>
+            <textarea style="resize: none;" name="contrato" id="" cols="30" rows="10" disabled>
+                Aqui entra o texto do contrato que precisa ser aceito
+            </textarea>
+            <label for="">
+                <input type="checkbox" name="" id="">
+                Li e aceito
+            </label>
+            <br>
+            <input type="range" name="" id="" min="0" max="10" step="2">
+            <br>
+            <input type="color" name="" id="">
+
+        </fieldset>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Resetar formulário">
+        
+    </form>
+</body>
+</html>
